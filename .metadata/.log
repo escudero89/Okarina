@@ -1,0 +1,22 @@
+
+!ENTRY org.eclipse.ui.ide 4 4 2011-12-29 19:53:08.000
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2011-12-29 19:53:08.000
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2011-12-29 19:53:08.000
+!MESSAGE Could not write workspace metadata '/media/sda3/Repositorios/Okarina/.metadata/.plugins/org.eclipse.core.resources/.root/8.tree'.
+!STACK 0
+java.io.FileNotFoundException: /media/sda3/Repositorios/Okarina/.metadata/.plugins/org.eclipse.core.resources/.root/8.tree (No existe el archivo o el directorio)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:209)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:160)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:47)
+	at org.eclipse.core.internal.resources.SaveManager.saveTree(SaveManager.java:1349)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1133)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2375)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:508)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2011-12-29 19:53:08.576
+!MESSAGE Can't write workspace state
